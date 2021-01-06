@@ -4,3 +4,8 @@ A kezdőpont a [0,0] a kijárat a [dimenzio-1,dimenzio-1], a cél a kezdőpontt�
 Mikor betöltjük a labirintust betölti egy változóba a transzformált domainobjectet.
 A megoldás gomb funkciója, ha be van töltve egy táblázat akkor szinhömérséklettel kirajzolja a legrövidebb utat.
 A mentés gombbal egy solution.csv-be menti le a legrövidebb utat.
+
+csatolva van:
+test.xml amiben nincs fal
+test2.xml amiben van fal és van megoldás
+test3.xml van fal és ninccs megoldás
