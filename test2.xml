@@ -1,0 +1,37 @@
+<maze>
+    <row>
+        <a>.</a>
+        <a>.</a>
+        <a>.</a>
+        <a>.</a>
+        <a>.</a>
+    </row>
+    <row>
+        <a>.</a>
+        <a>W</a>
+        <a>W</a>
+        <a>W</a>
+        <a>.</a>
+    </row>
+    <row>
+        <a>W</a>
+        <a>W</a>
+        <a>.</a>
+        <a>.</a>
+        <a>.</a>
+    </row>
+    <row>
+        <a>.</a>
+        <a>.</a>
+        <a>.</a>
+        <a>W</a>
+        <a>W</a>
+    </row>
+    <row>
+        <a>W</a>
+        <a>.</a>
+        <a>.</a>
+        <a>.</a>
+        <a>.</a>
+    </row>
+</maze>
