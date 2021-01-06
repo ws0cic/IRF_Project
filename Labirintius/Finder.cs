@@ -2,7 +2,7 @@
 {
     public static class Finder
     {
-        public static int PathFinder(Maze maze)
+        public static int?[][] PathFinder(Maze maze)
         {
             char wall = 'W';
             int dimension = maze.Dimension;
@@ -57,6 +57,15 @@
                     break;
                 }
             }
+
+            return w;
+           
+        }
+
+        public static int Shortest(int?[][] w)
+        {
+            var dimension = w.GetLength(0);
+
             var end = w[dimension - 1][dimension - 1];
 
             if (end.HasValue && end.Value >= 0)
