@@ -24,6 +24,7 @@ namespace Labirintius
                 maze.Solution = Finder.PathFinder(maze);
                 maze.Dimension = maze.Solution.Length;
                 maze.IsResoluble = Finder.Shortest(maze.Solution) != -1;
+                maze.Shortest = Finder.Shortest(maze.Solution);
 
                 for (int i = 0; i < maze.Dimension; i++)
                 {
@@ -70,15 +71,18 @@ namespace Labirintius
 
                         Color color = Color.Aqua;
                         if (maze1.Solution[i][j].HasValue && maze1.Solution[i][j].Value == -1)
-                            color = Color.Green;
+                            color = Color.Gray;
                         else if (maze1.Solution[i][j].HasValue)
-                            color = Color.FromArgb(maze1.Solution[i][j].Value * per, 100, 100);
+                            color = Color.FromArgb(255,255,255-(maze1.Solution[i][j].Value * per));
                         else
                             color = Color.Blue;
                         Draw(i, j, color);
                     }
                 }
+                    MessageBox.Show($"{maze1.Shortest} lépésből van megoldás.");   
             }
+            if(maze1!=null && !maze1.IsResoluble)
+                MessageBox.Show("Nincs megoldás.");
         }
 
         private void button3_Click(object sender, EventArgs e)
